@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #registration-form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        input[type="button"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div id="registration-form">
+        <h2>Student Information Form</h2>
+        <form>
+            <input type="text" placeholder="First Name" id="firstName" required>
+            <input type="text" placeholder="Last Name" id="lastName" required>
+            <select id="department" required>
+                <option value="" disabled selected>Select Department</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <!-- Add more departments as needed -->
+            </select>
+            <input type="text" placeholder="Year" id="year" required>
+            <input type="text" placeholder="Registration Number" id="registrationNumber" required>
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <input type="button" value="Submit" onclick="submitForm()">
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var department = document.getElementById('department').value;
+            var year = document.getElementById('year').value;
+            var registrationNumber = document.getElementById('registrationNumber').value;
+            var gender = document.getElementById('gender').value;
+
+            // Add your form submission logic here
+            // For simplicity, let's just display an alert with the entered details
+            alert('Form submitted!\n\nFirst Name: ' + firstName + '\nLast Name: ' + lastName +
+                '\nDepartment: ' + department + '\nYear: ' + year + '\nRegistration Number: ' +
+                registrationNumber + '\nGender: ' + gender);
+        }
+    </script>
+</body>
+</html>

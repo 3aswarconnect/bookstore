@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            height: 260px;
+            align-content: center;
+            display: grid;
+            width: max-content;
+            position: absolute;
+            left: 550px;
+        }
+
+        .head-bel {
+            position: absolute;
+            top: 290px;
+            left: 300px;
+            width: 1000px;
+            height: 40px;
+            justify-content: space-around;
+            display: flex;
+            text-decoration: none;
+        }
+
+        .side-bar {
+            float: left;
+            display: grid;
+            text-align: center;
+            height: 350px;
+            position: absolute;
+            top: 300px;
+            width: 200px;
+            font-size: larger;
+        }
+
+        .head-con {
+            width: 1300px;
+            position: absolute;
+            top: 310px;
+            left: 210px;
+            height: 500px;
+            -webkit-text-fill-color: rgb(17, 177, 177);
+            border-color: black;
+            /* border-style: double; */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 40px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        .td img {
+            max-width: 100px; 
+            max-height: 100px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <img id="i" src="assets/book.jpeg">
+        <br>
+        <h1>SRKR ENGINEERING COLLEGE</h1>
+    </div>
+    <div class="head-bel">
+        <a href="login.html">Login</a ><a href="registration.html">Registration</a><a>Catalogue</a>
+    </div>
+    <div class="side-bar">
+        <a  href="cse.html"> CSE</a><a href="ece.html">ECE</a><a href="eee.html">EEE</a><a href="it.html">IT</a>
+    </div>
+    <div class="head-con">
+        <table>
+            <tr>
+                <th>BOOK</th>
+                <th>IMAGE</th>
+                <th>DETAILS</th>
+            </tr>
+            <tr class="tr">
+                <td class="td">Book 1</td>
+                <td class="td"><img src="assets/cse1.jpeg"></td>
+                <td class="td">CART</td>
+            </tr>
+            <tr class="tr">
+                <td class="td">Book 2</td>
+                <td class="td"><img src="assets/cse2.jpeg"></td>
+                <td class="td">CART</td>
+            </tr>
+            <tr class="tr">
+                <td class="td">Book 3</td>
+                <td class="td"><img src="assets/cse3.jpeg"></td>
+                <td class="td">CART</td>
+            </tr>
+            <tr class="tr">
+                <td class="td">Book 4</td>
+                <td class="td"><img src="assets/cse4.jpeg"></td>
+                <td class="td">CART</td>
+            </tr>
+            <tr class="tr">
+                <td class="td">Book 5</td>
+                <td class="td"><img src="assets/cse6.jpeg"></td>
+                <td class="td">CART</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
